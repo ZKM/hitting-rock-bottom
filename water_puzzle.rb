@@ -70,5 +70,5 @@ end
    cave.add_water
  end
 
-puts cave.to_s
-#puts cave.to_depth_string
+#puts cave.to_s
+puts cave.to_depth_string
