@@ -61,14 +61,14 @@ class Cave
 
 end
 
- f = File.new('simple_cave.txt')
+ f = File.new('complex_cave.txt')
  lines = f.readlines
 
  cave = Cave.build(lines[2..lines.size-1])
 
- 1999.times do
+ 2460.times do
    cave.add_water
  end
 
- #puts cave.to_s
- puts cave.to_depth_string
+puts cave.to_s
+#puts cave.to_depth_string
