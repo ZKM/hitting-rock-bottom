@@ -61,7 +61,7 @@ class Cave
 
 end
 
- f = File.new('complex_cave.txt')
+ f = File.new('simple_cave.txt')
  lines = f.readlines
 
  cave = Cave.build(lines[2..lines.size-1])
@@ -70,4 +70,5 @@ end
    cave.add_water
  end
 
- puts cave.to_s
+ #puts cave.to_s
+ puts cave.to_depth_string
